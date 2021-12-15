@@ -15,7 +15,7 @@ html {
 }
 
 section {
-  height: 160vh;
+  height: 100vh;
 }
 
 .container {
@@ -105,8 +105,6 @@ span {
   left: 0;
   width: 100%;
 }
-
-/* Dark Theme */
 
 /* Pastel Colors */
 .Pastel1 {
