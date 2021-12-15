@@ -60,5 +60,5 @@ function skeleton() {
                       <h2 class="skeleton-title skeleton"></h2>
                       <div class="skeleton-type skeleton"></div>
                   </div>`
-  genshinListEl.innerHTML = skeletonHTML.repeat(10);
+  genshinListEl.innerHTML = skeletonHTML.repeat(1);
 }
