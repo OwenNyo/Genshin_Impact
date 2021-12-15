@@ -371,7 +371,54 @@ p {
 }
 
 /* Responsive */
+/* Tablets */
+@media (max-width: 768px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .header__content {
+    width: 70%;
+    padding: 0 0;
+  }
+
+  .header__content h1,
+  span,
+  p {
+    line-height: 1.5;
+  }
+
+  .title__h1 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .title__h2 {
+    font-size: 32px;
+  }
+
+  .title__para {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .header__logo {
+    width: 70%;
+  }
+
+  /* Search */
+  .search__container {
+    width: 550px;
+    margin: auto;
+  }
+
+  .search__title {
+    text-align: center;
+    font-size: 22px;
+  }
+}
 
 /* Small Phones */
 @media (max-width: 480px) {
@@ -419,5 +466,6 @@ p {
 
   .search__title {
     text-align: center;
+    font-size: 16px;
   }
 }
