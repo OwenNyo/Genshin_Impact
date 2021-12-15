@@ -15,7 +15,7 @@ html {
 }
 
 section {
-  height: 100%;
+  height: 160vh;
 }
 
 .container {
@@ -110,7 +110,10 @@ span {
 .dark-theme .nav__link--anchor,
 .dark-theme .title__h1,
 .dark-theme .title__h2,
-.dark-theme .title__para {
+.dark-theme .title__para
+.dark-theme .genshin__character
+.dark-theme .genshin__element
+.dark-theme .result {
   color: white;
 }
 .dark-theme section {
