@@ -420,55 +420,6 @@ p {
   }
 }
 
-/* Small Phones */
-@media (max-width: 550px) {
-  /* HEADER */
-  .header__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header__content {
-    width: 80%;
-    padding: 0 0;
-  }
-
-  .header__content h1,
-  span,
-  p {
-    line-height: 1.5;
-  }
-
-  .title__h1 {
-    font-size: 32px;
-    font-weight: 900;
-  }
-
-  .title__h2 {
-    font-size: 24px;
-  }
-
-  .title__para {
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  .header__logo {
-    width: 80%;
-  }
-
-  /* Search */
-  .search__container {
-    width: 80%px;
-    margin: auto;
-  }
-
-  .search__title {
-    text-align: center;
-    font-size: 16px;
-  }
-}
 
 @media (max-width: 480px) {
   /* HEADER */
