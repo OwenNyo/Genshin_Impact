@@ -52,6 +52,12 @@ function searchKeyPress(event) {
   return true;
 }
 
+//Button to start method
+function enterKeyPress() {
+  searchQuery = search.value;
+  main();
+}
+
 function skeleton() {
   skeletonHTML = `<div class="genshin">
                       <figure>
