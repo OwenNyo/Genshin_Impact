@@ -380,7 +380,7 @@ p {
   }
 
   .header__content {
-    width: 70%;
+    width: 90%;
     padding: 0 0;
   }
 
@@ -405,7 +405,7 @@ p {
   }
 
   .header__logo {
-    width: 70%;
+    width: 90%;
   }
 
   /* Search */
@@ -416,12 +416,12 @@ p {
 
   .search__title {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 /* Small Phones */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   /* HEADER */
   .header__container {
     display: flex;
@@ -460,7 +460,7 @@ p {
 
   /* Search */
   .search__container {
-    width: 400px;
+    width: 450px;
     margin: auto;
   }
 
