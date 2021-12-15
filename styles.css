@@ -470,7 +470,7 @@ p {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   /* HEADER */
   .header__container {
     display: flex;
@@ -479,7 +479,7 @@ p {
   }
 
   .header__content {
-    width: 80%;
+    width: 70%;
     padding: 0 0;
   }
 
@@ -504,12 +504,12 @@ p {
   }
 
   .header__logo {
-    width: 80%;
+    width: 70%;
   }
 
   /* Search */
   .search__container {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
@@ -519,7 +519,7 @@ p {
   }
 
   .nav__link--anchor {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
