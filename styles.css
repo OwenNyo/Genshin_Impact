@@ -380,7 +380,7 @@ p {
   }
 
   .header__content {
-    width: 90%;
+    width: 85%;
     padding: 0 0;
   }
 
@@ -405,7 +405,7 @@ p {
   }
 
   .header__logo {
-    width: 90%;
+    width: 85%;
   }
 
   /* Search */
