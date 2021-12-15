@@ -243,7 +243,6 @@ p {
   font-size: 16px;
   transition: 1s;
   font-family: GenshinFont;
-  text-transform: lowercase;
 }
 
 .fas:active {

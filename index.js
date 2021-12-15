@@ -32,7 +32,7 @@ async function main() {
 
   genshinListEl.innerHTML = `<div class="genshin">
                               <figure class="genshin__img--wrapper">
-                                <img class="genshin__img" alt="" src="https://api.genshin.dev/characters/${search.value}/card">
+                                <img class="genshin__img" alt="" src="https://api.genshin.dev/characters/${searchQuery.toLowerCase()}/card">
                               </figure>
                               <h2 class="genshin__character">${genshinDataResults.name}</h2>
                               <div class="genshin__element">${genshinDataResults.vision}</div>
@@ -62,3 +62,4 @@ function skeleton() {
                   </div>`
   genshinListEl.innerHTML = skeletonHTML.repeat(1);
 }
+
