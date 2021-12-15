@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="landing">
+      <nav>
+        <img class="logo" src="./assets/Genshin_Impact.png" alt="" />
+        <ul class="nav__link--list">
+          <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--RoseQuartz">About</a></li>
+          <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--Serenity">Find your character!</a></li>
+          <li class="nav__link click" onclick="toggleContrast()"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--coral"><i class="fas fa-adjust"></i></a></li>
+        </ul>
+      </nav>
+
+      <header class="row">
+        <div class="header__container">
+          <div class="header__content">
+            <h1 class="title__h1">Genshin Impact</h1>
+            <h2 class="title__h2">
+              <span class="Pastel1">Characters</span>,
+              <span class="Pastel2">Artifacts</span>,
+              <span class="Pastel3">and More</span>!
+            </h2>
+            <p class="title__para">
+              Genshin Impact is an open-world action role-playing game that
+              allows the player to control one of four interchangeable
+              characters in a party. Switching between characters can be done
+              quickly during combat, allowing the player to use several
+              different combinations of skills and attacks.
+            </p>
+          </div>
+          <div class="header__logo">
+            <img
+              class="header__logo--image"
+              src="assets/Genshin_Impact_Moonlight.jpg"
+            />
+          </div>
+        </div>
+      </header>
+
+      <!-- Search Bar -->
+      <div class="row">
+        <div class="search__container">
+          <h1 class="search__title">Start searching for your favorite characters!</h1>
+          <div class="search__bar">
+            <input type="text" id="search__input" placeholder="Jean, Keqing, Diluc, Mona" onkeypress="return searchKeyPress(event)">
+            <a href="">
+              <li class="fas fa-search"></li>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results of Character-->
+      <div class="container">
+        <div class="row">
+          <div class="results">
+            <h2 class="result">Results for </h2>
+          </div>
+          <div class="genshins">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

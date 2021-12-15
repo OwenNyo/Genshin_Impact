@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: GenshinFont;
+  src: url(HYWenHei-85W.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  padding-bottom: 56px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  font-family: GenshinFont;
+}
+
+.blue {
+  color: #4169e1;
+}
+
+.logo {
+  width: 160px;
+}
+
+/* Link Effects */
+.link__hover-effect {
+  position: relative;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect--coral:after {
+  background-color: #6b5b95;
+}
+
+.link__hover-effect--RoseQuartz:after {
+  background-color: #f7cac9;
+}
+
+.link__hover-effect--Serenity:after {
+  background-color: #92a8d1;
+}
+
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+/* Dark Theme */
+.dark-theme .nav__link--anchor,
+.dark-theme .title__h1,
+.dark-theme .title__h2,
+.dark-theme .title__para {
+  color: white;
+}
+.dark-theme section {
+  background-color: #242424;
+}
+
+.dark-theme .logo {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dark-theme .link__hover-effect--black:after {
+  background-color: white;
+}
+
+.dark-theme .search__bar {
+  box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.974);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Pastel Colors */
+.Pastel1 {
+  color: #7ec4cf;
+}
+
+.Pastel2 {
+  color: #9cadce;
+}
+
+.Pastel3 {
+  color: #d4afb9;
+}
+
+/* Nav Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#personal-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+.nav__link {
+  margin: 0 12px;
+}
+
+.nav__link--anchor {
+  font-size: 16px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.fa-adjust {
+  font-size: 20px;
+}
+
+/* Header */
+#landing-page {
+  min-height: 100vh;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+
+.header__content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+}
+
+.header__content h1,
+span,
+p {
+  line-height: 1.7;
+}
+
+.title__h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.title__h2 {
+  font-size: 32px;
+}
+
+.title__para {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header__logo {
+  width: 60%;
+}
+
+.header__logo--image {
+  width: 100%;
+}
+
+/* Search Bar */
+.search__container {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: calc(100% / 4);
+}
+
+.search__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #ff8b88;
+}
+
+.search__bar {
+  margin: 50px auto;
+  background: #7ec4cf;
+  height: 50px;
+  border-radius: 40px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.878);
+}
+
+.search__bar:hover input {
+  width: 500px;
+  cursor: pointer;
+}
+
+.search__bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 1s;
+  font-family: GenshinFont;
+  text-transform: lowercase;
+}
+
+.fas:active {
+  color: #4bb543;
+}
+
+/* Results */
+.results {
+  display: flex;
+  justify-content: center;
+
+  color: #242424;
+}
+
+.genshins {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.genshin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 16px 16px;
+  width: 100%;
+  max-width: 250px;
+  cursor: pointer;
+  color: #242424;
+}
+
+.genshin__character {
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.genshin__element {
+  font-size: 16px;
+  margin-top: -8px;
+}
+
+/* Skeleton */
+.skeleton-image {
+  width: 240px;
+  height: 355px;
+}
+
+.skeleton-title {
+  margin-top: 12px;
+  width: 70%;
+  height: 24px;
+}
+
+.skeleton-type {
+  margin-top: 8px;
+  width: 20%;
+  height: 16px;
+}
