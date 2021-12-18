@@ -473,6 +473,7 @@ Animation
 
   .header__logo {
     width: 85%;
+    margin-top: 30px;
   }
 
   /* Search */
@@ -522,6 +523,7 @@ Animation
 
   .header__logo {
     width: 70%;
+    margin-top: 30px;
   }
 
   /* Search */
@@ -576,6 +578,7 @@ Animation
 
   .header__logo {
     width: 70%;
+    margin-top: 30px;
   }
 
   /* Search */
