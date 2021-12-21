@@ -423,6 +423,46 @@ Button CSS
   }
 }
 
+/***********
+Genshin INFO
+***********/
+.genshin__container {
+  max-width: 1200px;
+  margin: 32px 0;
+  border: 20px solid cyan;
+  animation: border-pulsate 2s infinite;
+}
+
+.genshin__information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  color: #242424;
+}
+.genshin__img--wrapper {
+  max-width: 400px;
+}
+
+.genshin__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 32px;
+}
+
+.genshin__description h2{
+  font-size: 36px;
+}
+
+@keyframes border-pulsate {
+  0%   { border-color: rgba(0, 255, 255, 1); }
+  50%  { border-color: rgba(20, 228, 48); }
+  100% { border-color: rgba(0, 255, 255, 1); }
+}
+
 /* Responsive */
 /* Tablets */
 @media (max-width: 768px) {
