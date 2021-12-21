@@ -52,7 +52,13 @@ img {
   object-fit: cover;
 }
 
-h1, h2, h3, h4, h5, p, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
   font-family: GenshinFont;
 }
 
@@ -231,53 +237,58 @@ Sliding Image
   background-color: #717171;
 }
 
-.mySlides {display: none;}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.mySlides {
+  display: none;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*********
 Animation
 *********/
 .title__h1 {
   animation: 3s slide-right 0.5s forwards;
-  transform:translateX(-100%);
+  transform: translateX(-100%);
   opacity: 0;
 }
 
 .title__h2 {
   animation: 3s slide-left 1s forwards;
-  transform:translateX(100%);
+  transform: translateX(100%);
   opacity: 0;
 }
 
 .title__para {
   animation: 3s slide-top 1.5s forwards;
-  transform:translateY(100%);
+  transform: translateY(100%);
   opacity: 0;
 }
 
 @keyframes slide-right {
   to {
     opacity: 1;
-    transform:translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-left {
   to {
     opacity: 1;
-    transform:translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-top {
   to {
     opacity: 1;
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -306,6 +317,13 @@ Animation
   width: 100%;
   max-width: 250px;
   color: #242424;
+}
+
+.genshin:hover {
+  box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+  transition: opacity 1s linear ease-in-out;
+  opacity: 1;
+  cursor:pointer;
 }
 
 .genshin__character {
@@ -357,12 +375,12 @@ Button CSS
 *********/
 .button-64 {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   font-family: Phantomsans, sans-serif;
   font-size: 20px;

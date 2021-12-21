@@ -62,7 +62,7 @@ function skeleton() {
 
 // Genshin Results Display
 function genshinHTML(genshinCharacters, genshinDetails) {
-  return `<div id="genshin" class="genshin">
+  return `<div class="genshin" onclick="showUserPosts('${genshinCharacters}')">
   <figure class="genshin__img--wrapper">
     <img class="" src="https://api.genshin.dev/characters/${genshinCharacters}/card">
   </figure>
@@ -71,6 +71,7 @@ function genshinHTML(genshinCharacters, genshinDetails) {
 </div>`;
 }
 
+// Genshin Image Slider
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -86,5 +87,10 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+function showUserPosts(name) {
+  localStorage.setItem("name", name)
+  window.location.href = `genshin.html`
 }
 
