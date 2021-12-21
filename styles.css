@@ -52,13 +52,7 @@ img {
   object-fit: cover;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-span {
+h1, h2, h3, h4, h5, p, span {
   font-family: GenshinFont;
 }
 
@@ -70,7 +64,9 @@ span {
   width: 160px;
 }
 
-/* Link Effects */
+/***********
+Link Effects 
+***********/
 .link__hover-effect {
   position: relative;
 }
@@ -106,7 +102,9 @@ span {
   width: 100%;
 }
 
-/* Pastel Colors */
+/************ 
+pastel Colors 
+************/
 .Pastel1 {
   color: #7ec4cf;
 }
@@ -119,7 +117,9 @@ span {
   color: #d4afb9;
 }
 
-/* Nav Bar */
+/*************
+Navigation Bar
+*************/
 nav {
   display: flex;
   justify-content: space-between;
@@ -153,7 +153,9 @@ nav {
   font-size: 20px;
 }
 
-/* Header */
+/***** 
+Header 
+*****/
 #landing-page {
   min-height: 100vh;
 }
