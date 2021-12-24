@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"  />
     <title> 💎 Genshin.gg 💎 - Genshin Impact Information</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script id="C1"src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Landing Page -->
-    <section class="landing">
+    <section class="genshin__landing">
         <nav>
-          <img class="logo" src="./assets/Genshin_Impact.png" alt="" />
+          <img class="logo" id="C1"src="./assets/Genshin_Impact.png" alt="" />
           <ul class="nav__link--list">
-            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--RoseQuartz">About</a></li>
+            <li class="nav__link"><a href="index.html" class="nav__link--anchor link__hover-effect link__hover-effect--RoseQuartz">About</a></li>
             <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--Serenity">Find your character!</a></li>
           </ul>
         </nav>
@@ -29,8 +29,43 @@
         </div>
       </div>
     </div>
+
+    <!-- Constellations -->
+    <div class="constellation__container">
+      <div class="row">
+        <div class="genshin__constellations">
+          <a class="genshin__constellations--button">
+            <img class="genshin__constellations--logo" id="C1" src="assets/wishes.png" onclick="loadConstellations(this)">
+            <h3>C1</h3>
+          </a>
+          <a class="genshin__constellations--button">
+            <img class="genshin__constellations--logo" id="C2" src="assets/wishes.png" onclick="loadConstellations(this)">
+            <h3>C2</h3>
+          </a>
+          <a class="genshin__constellations--button">
+            <img class="genshin__constellations--logo" id="C3" src="assets/wishes.png" onclick="loadConstellations(this)">
+            <h3>C3</h3>
+          </a>
+          <a class="genshin__constellations--button">
+            <img class="genshin__constellations--logo" id="C4" src="assets/wishes.png" onclick="loadConstellations(this)">
+            <h3>C4</h3>
+          </a>
+          <a class="genshin__constellations--button">
+            <img class="genshin__constellations--logo" id="C5" src="assets/wishes.png" onclick="loadConstellations(this)">
+            <h3>C5</h3>
+          </a>
+          <a class="genshin__constellations--button">
+            <img class="genshin__constellations--logo" id="C6" src="assets/wishes.png" onclick="loadConstellations(this)">
+            <h3>C6</h3>
+          </a>
+        </div>
+        <div class="genshin__constellations--display">
+        </div>
+      </div>
+    </div>
+
+
   </section>
   <script src="genshin.js"></script>
   </body>
-
 </html>

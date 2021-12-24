@@ -15,7 +15,7 @@ html {
 }
 
 section {
-  height: 100vh;
+  height: 110vh;
 }
 
 .container {
@@ -429,7 +429,7 @@ Genshin INFO
 .genshin__container {
   max-width: 1200px;
   margin: 32px 0;
-  border: 20px solid cyan;
+  border: 5px solid cyan;
   animation: border-pulsate 2s infinite;
 }
 
@@ -455,6 +455,31 @@ Genshin INFO
 
 .genshin__description h2{
   font-size: 36px;
+}
+
+.genshin__constellations {
+  width: 1200px;
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.genshin__constellations--button {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.genshin__constellations--logo{
+  cursor: pointer;
+  width:50px;
+  height:50px;
+}
+
+.constellation__container {
+  display: flex;
+  margin: 16px 0;
+
 }
 
 @keyframes border-pulsate {
