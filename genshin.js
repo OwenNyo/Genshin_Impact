@@ -10,7 +10,7 @@ async function renderCards(name) {
     let genshinVision = genshinInfoJSON.vision;
     console.log(genshinVision);
 
-    results.innerHTML = `Results for ${genshinNAME} - ${genshinNAME.length}`     
+    results.innerHTML = `Results for ${genshinNAME}`     
     genshinListEl.innerHTML = genshinHTML(name,genshinInfoJSON);
 
 
@@ -49,8 +49,8 @@ function genshinHTML(genshinCharacters,genshinDetails) {
       <img class="" src="https://api.genshin.dev/characters/${genshinCharacters}/card">
     </figure>
     <div class="genshin__description">
-    <h2 class="genshin__name">Name : ${genshinDetails.name}</h2>
-    <h2 class="genshin__vision">Vision : ${genshinDetails.vision}</h2>
+    <h2>Name : ${genshinDetails.name}</h2>
+    <h2>Vision : ${genshinDetails.vision}</h2>
     <h2>Weapon : ${genshinDetails.weapon}</h2>
     </div>
   </div>`;
