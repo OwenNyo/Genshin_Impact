@@ -15,7 +15,7 @@ html {
 }
 
 section {
-  height: 110vh;
+  height: 105vh;
 }
 
 .container {
@@ -479,7 +479,6 @@ Genshin INFO
 .constellation__container {
   display: flex;
   margin: 16px 0;
-
 }
 
 @keyframes border-pulsate {
