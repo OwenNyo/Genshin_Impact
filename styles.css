@@ -14,10 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  height: 110vh;
-}
-
 .container {
   display: flex;
   padding: 56px 0;
@@ -27,6 +23,11 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 nav {
@@ -479,6 +480,10 @@ Genshin INFO
 .constellation__container {
   display: flex;
   margin: 16px 0;
+}
+
+.genshin__landing {
+  height: 120vh;
 }
 
 @keyframes border-pulsate {
